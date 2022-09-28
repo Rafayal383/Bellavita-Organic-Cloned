@@ -6,9 +6,9 @@ let product_array = bestsellerdata;
 const productAppend = (data) => {
   let container = document.getElementById("main");
   container.innerHTML = null;
-  data.forEach(({ img1, img, pname, offprice, price, Ratings }) => {
+  data.forEach(({ img1, img, img2, pname, offprice, price, Ratings }) => {
     let div = document.createElement("div");
-    div.innerHTML = Box({ img1, img, pname, offprice, price, Ratings });
+    div.innerHTML = Box({ img1, img, img2, pname, offprice, price, Ratings });
     container.append(div);
   });
 
