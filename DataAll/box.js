@@ -1,7 +1,7 @@
-export const Box = ({ img1, img, pname, offprice, price, Ratings }) => {
+export const Box = ({ img1, img, img2, pname, offprice, price, Ratings }) => {
   return ` <div>
 
-  <div id="best">
+  <div id="best" > 
       <img src="${img1}"
           alt="">
           
@@ -13,10 +13,12 @@ export const Box = ({ img1, img, pname, offprice, price, Ratings }) => {
 
   <img id="product_img" src=${img} 
       alt="">
-   
-      <i id="wishlist" class="fa-regular fa-heart"></i>
+   <div class="inner">
+   <img src=${img2} /></div>
+     
 
   </div>
+  <i id="wishlist" class="fa-regular fa-heart"></i>
 
   <p id="bigp">${pname}</p><br>
   <p id="smallp"></p>
