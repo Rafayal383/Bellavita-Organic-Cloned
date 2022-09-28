@@ -163,7 +163,7 @@ button {
 #image:hover .inner {
   display: block;
 }
-#bestseller {
+#best > img {
   z-index: 100;
 }
 #off {

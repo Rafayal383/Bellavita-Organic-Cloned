@@ -1,7 +1,7 @@
-export const Box = ({ img1, img,img2, pname, offprice, price, Ratings }) => {
+export const Box = ({ img1, img, img2, pname, offprice, price, Ratings }) => {
   return ` <div>
 
-  <div id="best">s
+  <div id="best" > 
       <img src="${img1}"
           alt="">
           
