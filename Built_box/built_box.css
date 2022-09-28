@@ -1,0 +1,102 @@
+#container{
+
+    width:80%;
+    /* height:1000px; */
+    border: 0px solid red;
+    margin: auto;
+}
+
+ .poster1{
+
+    width: 100%;
+    height: auto;
+    border: 0px solid blue;
+    
+}
+.poster1>img{
+    width: 100%;
+    border-radius:10px;
+} 
+
+.poster2{
+
+    width: 100%;
+    height: auto;
+    border: 1px solid rgb(171, 165, 165);
+    border-radius: 10px;
+    display: flex;
+    margin-top: 50px;
+}
+.poster2>div{
+
+    width: 50%;
+    height: auto;
+    border: 0px solid green;
+}
+.poster2>div>img{
+    width: 100%;
+    height: 100%;
+    border-top-left-radius:2% ;
+    border-bottom-left-radius:2% ;
+}
+.para{
+
+    width: 90%;
+}
+.poster2>div:nth-child(2)>div{
+
+    margin: auto;
+    width: 90%;
+    border: 0px solid red;
+    margin-top: 20%;
+}
+.poster2>div:nth-child(2)>div>button{
+
+    padding: 10px;
+    margin-top: 10px;
+    width: 20%;
+    border: none;
+    border-radius: 5px;
+    background-color: #475D4B;
+    color: white;
+    font-weight: bold;
+}
+
+.poster3{
+
+    width: 100%;
+    height: auto;
+    border: 1px solid  rgb(171, 165, 165);;
+    border-radius: 10px;
+    display: flex;
+    margin-top: 50px;
+}
+.poster3>div{
+
+    width: 50%;
+    height: auto;
+    border: 0px solid green;
+}
+.poster3>div>img{
+    width: 100%;
+    height: 100%;
+    border-bottom-right-radius:2% ;
+    border-top-right-radius: 2%;
+}
+.poster3>div>div{
+    border: 0px solid black;
+    margin-top: 20%;
+    text-align: end;
+    margin-right: 20px;
+}
+.poster3>div>div>button{
+
+    padding: 10px;
+    margin-top: 10px;
+    width: 20%;
+    border: none;
+    border-radius: 5px;
+    background-color: #475D4B;
+    color: white;
+    font-weight: bold;
+}
