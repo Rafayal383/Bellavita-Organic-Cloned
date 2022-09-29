@@ -1,0 +1,107 @@
+#container{
+    width: 90%;
+    margin: auto;
+    border: 1px solid gray;
+    margin-top: 2vh;
+}
+#slider_1{
+    width: 100%;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    display: flex;
+    align-items: center;
+    justify-content:center ;
+}
+#slider_2{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    justify-content:center ;
+    margin-top: 5vh;
+}
+
+
+.swiper{
+    width: 100%;
+    height: fit-content;
+}
+.swiper-slide img{
+    width: 100%;
+    border-radius: 13px;
+}
+.swiper .swiper-button-prev, .swiper .swiper-button-next{
+    color: #fff;
+}
+
+.swiper .swiper-pagination-bullet-active{
+    background: #fff;
+}
+#static_img1>img{
+    margin-top: 5vh;
+    width: 100%;
+    border-radius: 3%;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    
+}
+.tit{
+    width: 50%;
+    margin: auto;
+    border: 1px solid red;
+    text-align: center;
+    margin-top: 3vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    line-height: 8vh;
+}
+.tit div{
+    /* border: 1px solid blue; */
+    background-color:#475d4bc5 ;
+    width: 25%;
+    height: 2.5px;
+}
+.tit h5{
+    font-size: 25px;
+    padding: 2px;
+    color:#475d4bf6 ;
+}
+#best_seller_products{
+    margin-top: 3vh;
+    height: 50vh;
+    border:  1px solid red;
+}
+#spotlight_products{
+    margin-top: 3vh;
+    height: 50vh;
+    border:  1px solid red;
+}
+#find_solutions_for{
+    height: 50vh;
+    margin-top: 3vh;
+    border:  1px solid red;
+}
+#luxury_fragrances{
+    height: 50vh;
+    margin-top: 3vh;
+    border:  1px solid red;
+}
+#trust_us_img img{
+    margin-top: 6vh;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 15px;
+    width: 100%;
+}
+#bellacash img,#google_play_image img{
+    width: 100%;
+    margin-top: 5vh;
+    border-radius: 15px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+
+.parent{
+    background-color: red;
+}
+.child{
+    background-color: blue;
+}
