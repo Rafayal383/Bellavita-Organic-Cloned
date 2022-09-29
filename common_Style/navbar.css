@@ -1,4 +1,3 @@
-
 #nav_dis {
   width: 100%;
   background-color: #e5f0da;
@@ -92,86 +91,131 @@
   position: fixed;
   left: 11%;
   z-index: 100;
-
 }
-#nav_menu>div{
+#nav_menu > div {
   position: relative;
   display: flex;
   align-items: center;
   /* padding: 10px 0; */
   max-width: 100%;
-
 }
-.elements{
+.elements {
   width: 100%;
-  
+
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
-.elements>div{
+.elements > div {
   position: relative;
 }
-.elements>div>p{
-  padding: 10px 15px;
+.elements > div > p {
+  padding: 5px 20px 10px 15px;
   cursor: pointer;
 }
-.dropdown{
+.element-item {
+  font-size: 15px;
+  color: #475d4b;
+  border-right: 1px solid #e5f0da;
+  margin-bottom: 5px;
+  /* transition: 1s ease-out; */
+}
+.element-item:hover {
+  text-decoration: underline;
+}
+.hovEff:hover {
+  background-color: #e5f0da;
+  border-radius: 10px 10px 0 0;
+  border: none;
+}
+
+.dropdown {
   top: 100%;
-  left: 100%;
+  /* left: 120%; */
   transform: translateX(-50%);
-  width: 1550px;
+  /* width: 1450px; */
   padding: 15px 20px;
   border-radius: 8px;
-  color: #475D4B;
-  background-color: #E5F0DA;
+  color: #475d4b;
+  background-color: #e5f0da;
   box-shadow: 0 0 35px rgb(0 0 0 / 20%);
   visibility: hidden;
   position: absolute;
-  /* margin-top: 1px; */
+  margin-top: -5px;
 }
 
-.dropdown>div>div:nth-child(2){
+.skinDropdown {
+  width: 1450px;
+  left: 120%;
+}
+.hairDropdown {
+  width: 1000px;
+  left: 80%;
+}
+
+.dropdown > div > div:nth-child(2) {
   margin-top: 10px;
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2, 1fr);
   column-gap: 40px;
-  
-  row-gap: 15px;
 
+  row-gap: 15px;
 }
 
-.dropdown a{
+.dropdown a {
   color: black;
   text-decoration: none;
+  font-size: 14px;
 }
-.elements>div:hover .dropdown{
+.elements > div:hover .dropdown {
   visibility: visible;
   position: absolute;
 }
-.dropdown{
+.dropdown {
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 45px;
 }
-/* .dropdownlist:nth-child(2){
+
+.bodyDropdown {
+  width: 600px;
+  left: 80%;
   display: grid;
-  grid-template-columns: repeat(2,1fr);
-} */
-.dropdownlist{
+  grid-template-columns: repeat(2, 1fr);
+}
+.perfumeDropdown {
+  width: 700px;
+  left: 80%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.comboDropdown {
+  width: 400px;
+  left: 80%;
+  display: grid;
+  gap: 0;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.innHead {
+  border-bottom: 1px solid #475d4b;
+  width: 150px;
+}
+
+.dropdownlist {
   width: 100%;
 }
-.dropdown>div:nth-child(3) > div:nth-child(2){
+.dropdown > div:nth-child(3) > div:nth-child(2) {
   grid-template-columns: 1fr;
 }
 
-.product_img img{ 
+.product_img img {
   width: 100%;
 }
-.skinimg{
+.skinimg {
   display: flex;
   gap: 40px;
 }
-.skinimg div{
+.skinimg div {
   width: 50%;
   display: flex;
   flex-direction: column;

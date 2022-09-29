@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./common.css" />
-    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="navbar.css" />
   </head>
   <body>
     <div id="nav_dis">
@@ -87,10 +87,10 @@
             <p class="element-item">BESTSELLERS</p>
           </div>
           <div>
-            <p class="element-item">SKIN CARE</p>
-            <div class="dropdown">
+            <p class="element-item hovEff">SKIN CARE</p>
+            <div class="dropdown skinDropdown">
               <div class="dropdownlist">
-                <div>BY PRODUCT TYPE</div>
+                <div class="innHead">BY PRODUCT TYPE</div>
                 <div>
                   <a href="#">ALL SKINCARE PRODUCTS</a>
                   <a href="#">FACE CREAM</a>
@@ -110,7 +110,7 @@
                 </div>
               </div>
               <div class="dropdownlist">
-                <div>BY CONCERN</div>
+                <div class="innHead">BY CONCERN</div>
                 <div>
                   <a href="#">PIGMENTATION</a>
                   <a href="#">ACNE & PIMPLES</a>
@@ -118,7 +118,7 @@
                   <a href="#">DARK SPOTS</a>
                   <a href="#">DARK CIRCLES</a>
                   <a href="#">BLACKHEADS & WHITE HEADS</a>
-  
+
                   <a href="#">TAN REMOVAL</a>
                   <a href="#">HYDRATION</a>
                   <a href="#">SKIN BRIGHTENING</a>
@@ -130,27 +130,28 @@
               </div>
               <div class="dropdownlist skinimg">
                 <div>
-                  <div>BY SKIN TYPE</div>
-                <div>
-                      <a href="#">DULL SKIN</a>
-                      <a href="#">DRY SKIN</a>
-                      <a href="#">OILY SKIN</a>
-                      <a href="#">NORMAL SKIN</a>
+                  <div class="innHead">BY SKIN TYPE</div>
+                  <div>
+                    <a href="#">DULL SKIN</a>
+                    <a href="#">DRY SKIN</a>
+                    <a href="#">OILY SKIN</a>
+                    <a href="#">NORMAL SKIN</a>
+                  </div>
                 </div>
-                </div>
-                <div class="dropdownlist product_img" >
-                  <img src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/Skin_Care_98c75ccd-6024-43d3-8c42-fb5b988084ce.png?v=1663914046" alt="">
+                <div class="dropdownlist product_img">
+                  <img
+                    src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/Skin_Care_98c75ccd-6024-43d3-8c42-fb5b988084ce.png?v=1663914046"
+                    alt=""
+                  />
                 </div>
               </div>
-              
-  
             </div>
           </div>
           <div>
-            <p class="element-item">HAIR CARE</p>
-            <div class="dropdown">
+            <p class="element-item hovEff">HAIR CARE</p>
+            <div class="dropdown hairDropdown">
               <div class="dropdownlist">
-                <div>BY PRODUCT TYPE</div>
+                <div class="innHead">BY PRODUCT TYPE</div>
                 <div>
                   <a href="#">ALL HAIRCARE PRODUCTS</a>
                   <a href="#">SHAMPOO</a>
@@ -160,47 +161,52 @@
                 </div>
               </div>
               <div class="dropdownlist">
-                <div>BY HAIR CONCERN</div>
+                <div class="innHead">BY HAIR CONCERN</div>
                 <div>
-                      <a href="#">HAIR LOSS</a>
-                      <a href="#">HAIR THINNING</a>
-                      <a href="#">DULL HAIR</a>
-                      <a href="#">DANDRUFF</a>
-                      <a href="#">DAMAGE HAIR</a>
-                      <a href="#">FRIZZY HAIR</a>
-                      <a href="#">DRY HAIR & SCALP</a>
+                  <a href="#">HAIR LOSS</a>
+                  <a href="#">HAIR THINNING</a>
+                  <a href="#">DULL HAIR</a>
+                  <a href="#">DANDRUFF</a>
+                  <a href="#">DAMAGE HAIR</a>
+                  <a href="#">FRIZZY HAIR</a>
+                  <a href="#">DRY HAIR & SCALP</a>
                 </div>
               </div>
-              <div class="dropdownlist" >
-                <!-- <img src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/Hair_Care_Medium_9f61e8b2-fbfd-4dde-b6f2-4c265b70be8a.jpg?v=1659103665" alt=""> -->
-              </div>
-  
-            </div>
-          </div>
-          <div>
-            <p class="element-item">SKIN CARE</p>
-            <div class="dropdown">
-              <div class="dropdownlist">
-                <div>BATH & BODY</div>
-                <div>
-                      <a href="#">ALL BODY CARE PRODUCTS</a>
-                      <a href="#">BODY SOAPS</a>
-                      <a href="#">BODY WASH</a>
-                      <a href="#">BODY SCRUB</a>
-                      <a href="#">BODY LOTION</a>
-                </div>
-              </div>
-              <div class="dropdownlist">
-                <!-- <img src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/Body_Care_Megamenu.png?v=1651666035" alt=""> -->
+              <div class="dropdownlist product_img">
+                <img
+                  src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/Hair_Care_Medium_9f61e8b2-fbfd-4dde-b6f2-4c265b70be8a.jpg?v=1659103665"
+                  alt=""
+                />
               </div>
             </div>
           </div>
           <div>
-            <p class="element-item">PERFUME</p>
-            <div class="dropdown">
+            <p class="element-item hovEff">BODY CARE</p>
+            <div class="dropdown bodyDropdown">
               <div class="dropdownlist">
-                <div></div>
-                  ALL PERFUMES
+                <div class="innHead">BATH & BODY</div>
+                <div>
+                  <a href="#">ALL BODY CARE PRODUCTS</a>
+                  <a href="#">BODY SOAPS</a>
+                  <a href="#">BODY WASH</a>
+                  <a href="#">BODY SCRUB</a>
+                  <a href="#">BODY LOTION</a>
+                </div>
+              </div>
+              <div class="dropdownlist product_img">
+                <img
+                  src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/Body_Care_Megamenu.png?v=1651666035"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+          <div>
+            <p class="element-item hovEff">PERFUME</p>
+            <div class="dropdown perfumeDropdown">
+              <div class="dropdownlist">
+                <div class="innHead">ALL PERFUMES</div>
+
                 <div>
                   <a href="#">PERFUMES FOR HER</a>
                   <a href="#">PERFUMES FOR HIM</a>
@@ -210,35 +216,37 @@
                   <a href="#">GIFT SETS</a>
                 </div>
               </div>
-              <div class="dropdownlist">
-                <!-- <img src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/Perfumes_Medium_c0c80af3-da25-4c9f-8e7f-c00c84f76a51.jpg?v=1659103815" alt=""> -->
+              <div class="dropdownlist product_img">
+                <img
+                  src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/Perfumes_Medium_c0c80af3-da25-4c9f-8e7f-c00c84f76a51.jpg?v=1659103815"
+                  alt=""
+                />
               </div>
-  
             </div>
           </div>
           <div>
-              <p class="element-item">PERFUME</p>
-              <div class="dropdown">
-                <div class="dropdownlist">
-                  <div></div>
-                    COMBOS
-                  <div>
-                    <a href="#">GIFT BOXES</a>
-                    <a href="#">ALL COMBOS</a>
-                    <a href="#">BESTSELLER COMBOS</a>
-                    <a href="#">SKIN COMBOS</a>
-                    <a href="#">HAIR COMBOS</a>
-                    <a href="#">BODY COMBOS</a>
-                    <a href="#">PERFUME COMBOS</a>
-                    <a href="#">C GLOW RANGE</a>
-                    <a href="#">KUMKUMADI RANGE</a>
-                  </div>
+            <p class="element-item hovEff">COMBOS & GIFTS</p>
+            <div class="dropdown comboDropdown">
+              <div class="dropdownlist">
+                <div class="innHead">COMBOS</div>
+
+                <div>
+                  <a href="#">GIFT BOXES</a>
+                  <a href="#">ALL COMBOS</a>
+                  <a href="#">BESTSELLER COMBOS</a>
+                  <a href="#">SKIN COMBOS</a>
+                  <a href="#">HAIR COMBOS</a>
+                  <a href="#">BODY COMBOS</a>
+                  <a href="#">PERFUME COMBOS</a>
+                  <a href="#">C GLOW RANGE</a>
+                  <a href="#">KUMKUMADI RANGE</a>
                 </div>
               </div>
+            </div>
           </div>
           <div>
-              <p class="element-item">BUILD A BOX</p>
-            </div>
+            <p class="element-item">BUILD A BOX</p>
+          </div>
         </div>
       </div>
     </div>
