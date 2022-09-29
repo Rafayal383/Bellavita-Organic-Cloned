@@ -8,6 +8,6 @@ checkout LS name : -- "checkout";
 
 ** info about using colors for project **;
 LIGHT GREEN : --- "#E5F0DA";
-DIV GREEN : --- "#475D4B";
+DEEP GREEN : --- "#475D4B";
 
 
