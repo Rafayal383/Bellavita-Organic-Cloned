@@ -2,6 +2,7 @@
 import bestsellerdata from "../DataAll/bestSeller.js";
 import { Box } from "../DataAll/box.js";
 let product_array = bestsellerdata;
+console.log("aabrakadaabra");
 
 const productAppend = (data) => {
   let container = document.getElementById("main");
@@ -31,3 +32,4 @@ function addTocart() {
 function productPage() {
   window.location.href = "single.html";
 }
+
