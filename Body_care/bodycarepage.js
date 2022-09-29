@@ -9,16 +9,25 @@ const productAppend = (data) => {
   data.forEach(({ img1, img, img2, pname, offprice, price, Ratings }) => {
     let div = document.createElement("div");
     div.innerHTML = Box({ img1, img, img2, pname, offprice, price, Ratings });
+    div.addEventListener("click", () => {
+      let obj = {
+        img1,
+        img,
+        img2,
+        pname,
+        offprice,
+        price,
+        Ratings,
+      };
+      localStorage.setItem("products", JSON.stringify(obj));
+      window.location.href = "single.html";
+    });
     container.append(div);
   });
 
   let buttons = document.getElementById("button");
   buttons.addEventListener("click", function () {
     addTocart();
-  });
-  let img_product = document.getElementById("product_img");
-  img_product.addEventListener("click", function () {
-    productPage();
   });
 };
 console.log(product_array);
@@ -27,9 +36,6 @@ productAppend(product_array);
 
 function addTocart() {
   window.location.href = "#";
-}
-function productPage() {
-  window.location.href = "single.html";
 }
 
 document.querySelector("#SortBy").addEventListener("change", handlePriceSort);
@@ -94,11 +100,3 @@ function handlePriceSort() {
 // total = product_array.length;
 // let sort = document.querySelector(".sort_section");
 // sort.append(total);
-
-let wishlist = document.getElementById("wishlist");
-wishlist.addEventListener("click", function () {
-  addtoWishlist();
-});
-function addtoWishlist() {
-  window.location.href = "https://www.google.com";
-}
