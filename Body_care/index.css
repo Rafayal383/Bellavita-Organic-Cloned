@@ -153,6 +153,7 @@ button {
 #image img,
 .inner {
   width: 100%;
+  cursor: pointer;
 }
 .inner {
   position: absolute;
@@ -189,3 +190,6 @@ option {
   border: none;
 }
 
+#wishlist {
+  cursor: pointer;
+}

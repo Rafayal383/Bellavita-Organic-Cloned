@@ -94,3 +94,11 @@ function handlePriceSort() {
 // total = product_array.length;
 // let sort = document.querySelector(".sort_section");
 // sort.append(total);
+
+let wishlist = document.getElementById("wishlist");
+wishlist.addEventListener("click", function () {
+  addtoWishlist();
+});
+function addtoWishlist() {
+  window.location.href = "https://www.google.com";
+}
