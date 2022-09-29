@@ -6,7 +6,7 @@ function login(){
    let password = document.getElementById("password").value
 
     let flag = false;
-   data.forEach(function(el){
+   data.foreach(function(el){
 
           if(email===el.email && password===el.password){
 
@@ -22,7 +22,7 @@ function login(){
    if(flag===true){
 
         alert("Login successful");
-        window.location = "" /*redirect to landing page*/
+        window.location = "index.html"
    }else{
 
      alert("error");
