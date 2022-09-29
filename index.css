@@ -29,12 +29,49 @@
     width: 100%;
     border-radius: 13px;
 }
+.child_slide{
+    padding:1px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    width: 18%;
+    text-align: center;
+    justify-content: center;
+    height: 100%;
+    /* border: 1px solid red; */
+    overflow: hidden;
+}
+.child_slide img{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    width:100%;
+    justify-content: center;
+}
+.detail_spotlight_prod{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 4%;
+    background-color:#E5F0DA ;
+}
+.swiper-slide{
+    display: flex;
+    justify-content: space-around;
+}
 .swiper .swiper-button-prev, .swiper .swiper-button-next{
     color: #fff;
+}
+#spotlight_products .swiper .swiper-button-prev, .swiper .swiper-button-next{
+    color: whitesmoke;
+    background-color: rgba(34, 34, 34, 0.482);
+    border-radius: 15%;
 }
 
 .swiper .swiper-pagination-bullet-active{
     background: #fff;
+}
+#spotlight_products .swiper .swiper-pagination-bullet-active{
+    background: #fff;
+    display: none;
+}
+#spotlight_products .swiper .swiper-pagination-bullet{
+    background: #fff;
+    display: none;
 }
 #static_img1>img{
     margin-top: 5vh;
@@ -72,23 +109,61 @@
 }
 #spotlight_products{
     margin-top: 3vh;
-    height: 50vh;
+    /* height: 60vh; */
     border:  1px solid red;
+    overflow: hidden;
+    padding: 5% 0 5% 0;
 }
 #find_solutions_for{
+    align-items: center;
+    display: flex;
     height: 50vh;
     margin-top: 3vh;
     border:  1px solid red;
+    justify-content: space-around;
 }
 #luxury_fragrances{
+    align-items: center;
+    display: flex;
     height: 50vh;
     margin-top: 3vh;
     border:  1px solid red;
+    justify-content: space-around;
+}
+#luxury_fragrances img{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    width: 100%;
+    transition: .3s ease-in-out;
+    border-radius: 5px;
+}
+#find_solutions_for img{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    width: 100%;
+    transition: .3s ease-in-out;
+    border-radius: 5px;
+}
+#luxury_fragrances img:hover{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    transform: scale(1.1);
+    border-radius: 40px;
+}
+#find_solutions_for img:hover{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    transform: scale(1.1);
+    border-radius: 40px;
+}
+#luxury_fragrances .lux_child{
+    overflow: hidden;
+    width: 18%;
+}
+#find_solutions_for .lux_child{
+    overflow: hidden;
+    width: 18%;
 }
 #trust_us_img img{
     margin-top: 6vh;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    border-radius: 15px;
+    border-radius: 20px;
     width: 100%;
 }
 #bellacash img,#google_play_image img{
@@ -100,8 +175,36 @@
 
 
 .parent{
-    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    height: 400px;
 }
 .child{
-    background-color: blue;
+
+    width: 20%;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: none;
+
+    
+}
+.child img{
+    height: 200px;
+    width: 100%;
+}
+#leftarrow,#rightarrow{
+    margin-left: 2.7%;
+    width: 10%;
+    display: inline-block;
+}
+#rightarrow button,#leftarrow button{
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 35px;
+    background-color: rgba(32, 0, 0, 0.813);
+    color: white;
+    border-radius:14px;
+
 }
