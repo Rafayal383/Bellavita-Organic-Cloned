@@ -1,11 +1,11 @@
-import FacecreamData from "./skincare_2.js"
+import FaceserumData from "./skincare_5.js"
 import { Box } from "./box.js";
-let product_array = FacecreamData;
+let product_array = FaceserumData;
 
 
-localStorage.setItem("FacecreamData", JSON.stringify(FacecreamData));
+localStorage.setItem("FaceserumData", JSON.stringify(FaceserumData));
 
-let data = JSON.parse(localStorage.getItem("FacecreamData"));
+let data = JSON.parse(localStorage.getItem("FaceserumData"));
 
 const productAppend = (data) => {
   let container = document.getElementById("main");
