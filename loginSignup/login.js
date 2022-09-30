@@ -22,7 +22,7 @@ function login(event){
    if(flag===true){
 
         alert("Login successful");
-        window.location = "../index.html"
+        window.location = "/dreary-hand-8237/landingPage/landing.html"
    }else{
 
      alert("error");
