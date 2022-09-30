@@ -1,7 +1,7 @@
 #container{
-    width: 40%;
+    width: 35%;
     height: 400px;
-    border: 0px solid red;
+    border: px solid red;
     text-align: center;
     margin: auto;
     margin-top: 10%;
@@ -33,4 +33,9 @@ form>input{
     color: white;
     font-size: 16px;
 
+}
+
+a{
+    color: #475d4b;
+    text-decoration: none;
 }
