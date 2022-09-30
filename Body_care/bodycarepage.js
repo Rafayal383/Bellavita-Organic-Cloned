@@ -1,4 +1,3 @@
-// import allProducts from "../DataAll/alProduct.js";
 import bodycaredata from "../DataAll/body_care.js";
 let product_array = bodycaredata;
 const showProduct = ({ img1, img, img2, pname, offprice, price, Ratings }) => {
@@ -47,6 +46,55 @@ const addtocart = ({ img1, img, img2, pname, offprice, price, Ratings }) => {
     Ratings,
   };
   localStorage.setItem("cart", JSON.stringify(obj));
+};
+
+const showProduct = ({ img1, img, img2, pname, offprice, price, Ratings }) => {
+  let obj = {
+    img1,
+    img,
+    img2,
+    pname,
+    offprice,
+    price,
+    Ratings,
+  };
+  localStorage.setItem("products", JSON.stringify(obj));
+  window.location.href = "single.html";
+};
+
+const addtowishlist = ({
+  img1,
+  img,
+  img2,
+  pname,
+  offprice,
+  price,
+  Ratings,
+}) => {
+  let obj = {
+    img1,
+    img,
+    img2,
+    pname,
+    offprice,
+    price,
+    Ratings,
+  };
+  localStorage.setItem("wishlist", JSON.stringify(obj));
+};
+let cart_data = JSON.parse(localStorage.getItem("cart")) || [];
+const addtocart = ({ img1, img, img2, pname, offprice, price, Ratings }) => {
+  let obj = {
+    img1,
+    img,
+    img2,
+    pname,
+    offprice,
+    price,
+    Ratings,
+  };
+  cart_data.push(obj);
+  localStorage.setItem("cart", JSON.stringify(cart_data));
 };
 
 const productAppend = (data) => {
@@ -167,8 +215,3 @@ function handlePriceSort() {
     productAppend(product_array);
   }
 }
-
-// let total = document.getElementById("total").innerHTML;
-// total = product_array.length;
-// let sort = document.querySelector(".sort_section");
-// sort.append(total);
