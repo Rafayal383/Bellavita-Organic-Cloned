@@ -1,8 +1,8 @@
 #container{
     width: 90%;
     margin: auto;
-    border: 1px solid gray;
-    margin-top: 2vh;
+    margin-top: 20vh;
+
 }
 #slider_1{
     width: 100%;
@@ -83,7 +83,6 @@
 .tit{
     width: 50%;
     margin: auto;
-    border: 1px solid red;
     text-align: center;
     margin-top: 3vh;
     display: flex;
@@ -105,12 +104,10 @@
 #best_seller_products{
     margin-top: 3vh;
     height: 50vh;
-    border:  1px solid red;
 }
 #spotlight_products{
     margin-top: 3vh;
     /* height: 60vh; */
-    border:  1px solid red;
     overflow: hidden;
     padding: 5% 0 5% 0;
 }
@@ -119,7 +116,6 @@
     display: flex;
     height: 50vh;
     margin-top: 3vh;
-    border:  1px solid red;
     justify-content: space-around;
 }
 #luxury_fragrances{
@@ -127,7 +123,6 @@
     display: flex;
     height: 50vh;
     margin-top: 3vh;
-    border:  1px solid red;
     justify-content: space-around;
 }
 #luxury_fragrances img{

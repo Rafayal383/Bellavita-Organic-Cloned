@@ -1,6 +1,6 @@
 // import allProducts from "../DataAll/alProduct.js";
-import bestsellerdata from "./DataAll/bestSeller.js";
-import { Box } from "./DataAll/box.js";                                             //../DataAll/bestSeller.js    ../DataAll/box.js
+import bestsellerdata from "../DataAll/bestSeller.js";
+import { Box } from "../DataAll/box.js";                                             //../DataAll/bestSeller.js    ../DataAll/box.js
 let product_array = new Array(4);
 for(let i=0;i<4;i++){
   product_array[i]=bestsellerdata[i];
