@@ -14,7 +14,8 @@
 
 input{
 
-  height: 30px;
+  height: 40px;
+  margin-top: 5%;
 }
 form{
  display: grid;
@@ -33,4 +34,9 @@ form{
   color: white;
   font-size: 16px;    
 
+}
+
+form+a{
+     text-decoration: none;
+     color: #475d4b;
 }

@@ -7,6 +7,11 @@
     margin-top: 10%;
 }
 
+h1{
+
+    margin-bottom: 5%;
+}
+
 form{
 
     display: grid;
@@ -14,7 +19,7 @@ form{
 
 }
 form>input{
-    height: 30px;
+    height: 40px;
     color: #475d4b;
 }
 
