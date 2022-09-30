@@ -31,6 +31,18 @@ let FacePackData= [
         Ratings: "4.5",
       },
 
+
+      {
+        img1: "https://cdn.shopify.com/s/files/1/0054/6665/2718/files/Best-sellers-tag.png?v=10809169506792369733",
+        img: "https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Kumkumadi-Face-Oil-01_360x.jpg?v=1652341175",
+        img2:"https://cdn.shopify.com/s/files/1/0054/6665/2718/products/KumkumadiFaceOil-02_360x.jpg?v=1652341175",
+        pname: "Ayurvedic Kumkumadi Face Oil, 30ml",
+        offprice: "389.00",
+        price: "599.00",
+        Ratings: "4.5",
+      },
+
+
 ]
 
 export default FacePackData;

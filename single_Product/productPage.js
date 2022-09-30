@@ -27,9 +27,9 @@ console.log(product_array);
 productAppend(product_array);
 
 function addTocart() {
-  window.location.href = "#";
+  window.location.href = "single.html";
 }
 function productPage() {
-  window.location.href = "single.html";
+  window.location.href = "#";
 }
 
