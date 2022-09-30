@@ -4,7 +4,7 @@ export const productdetail = ({ pname, img2, price, offprice, Ratings }) => {
       <img src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/Offer-Strip-Banner-v2_1500x.jpg?v=1663852851"
           alt="">
   </div>
-  <p>Home > Shop > Luxury Unisex Perfume Gift Set - 4x20ml</p>
+  <p>Home > Shop > ${pname}</p>
 </div>
 <div id="prodGrid">
   <div id="col1">
@@ -16,7 +16,7 @@ export const productdetail = ({ pname, img2, price, offprice, Ratings }) => {
                   <div>35% <br> OFF</div>
               </div>
               <div id="prodImg">
-                  <img src="https://cdn.shopify.com/s/files/1/0054/6665/2718/products/UnisexBox-01_765x.jpg?v=1652421720"
+                  <img src=${img2}
                       alt="">
                   <i class="fa-regular fa-heart"></i>
               </div>
@@ -27,17 +27,17 @@ export const productdetail = ({ pname, img2, price, offprice, Ratings }) => {
       <div id="container2">
           <div id="box2">
               <div id="sec1">
-                  <h4>Luxury Unisex Perfume Gift Set - 4x20ml</h4>
+                  <h4>${pname}</h4>
                   <i class="fa-solid fa-share-nodes"></i>
               </div>
-              <h5>Eau De Parfum</h5>
+              <h5></h5>
               <div id="sec2">
                   <div>
-                      <p id="org">₹552.00</p>
-                      <p id="strike">₹849.00</p>
+                      <p id="org">${offprice}</p>
+                      <p id="strike">${offprice}</p>
                   </div>
                   <div>
-                      <p>5.0</p>
+                      <p>${Ratings}</p>
                       <i class="fa-solid fa-star"></i>
                   </div>
               </div>
