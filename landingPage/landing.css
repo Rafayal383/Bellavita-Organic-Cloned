@@ -58,7 +58,7 @@
 }
 #spotlight_products .swiper .swiper-button-prev, .swiper .swiper-button-next{
     color: whitesmoke;
-    background-color: rgba(34, 34, 34, 0.482);
+    /* background-color: rgba(34, 34, 34, 0.482); */
     border-radius: 15%;
 }
 
@@ -162,11 +162,17 @@
     width: 100%;
 }
 #bellacash img,#google_play_image img{
-    width: 100%;
+    width: 110%;
     margin-top: 5vh;
     border-radius: 15px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
+#google_play_image,#bellacash{
+    width: 110%;
+    display: flex;
+    justify-content: center;
+}
+
 
 
 .parent{
