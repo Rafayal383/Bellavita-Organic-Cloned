@@ -2,8 +2,8 @@ let data = JSON.parse(localStorage.getItem("cart")) || [];
 // let total_amount = document.querySelector("#total_amount");
 display(data);
 function display(data) {
-  let menu = document.getElementById("content");
-  menu.innerHTML = null;
+  let cont = document.getElementById("content");
+  cont.innerHTML = null;
   //   let total = 0;
   //   total_amount.innerHTML = "";
   data.forEach(function (el, i) {
@@ -28,7 +28,7 @@ function display(data) {
     //     total += +el.price;
     box.append(pname, price);
     div.append(image, box, icon);
-    menu.append(div);
+    cont.append(div);
   });
 }
 

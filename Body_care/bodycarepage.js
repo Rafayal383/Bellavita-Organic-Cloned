@@ -1,52 +1,5 @@
 import bodycaredata from "../DataAll/body_care.js";
 let product_array = bodycaredata;
-const showProduct = ({ img1, img, img2, pname, offprice, price, Ratings }) => {
-  let obj = {
-    img1,
-    img,
-    img2,
-    pname,
-    offprice,
-    price,
-    Ratings,
-  };
-  localStorage.setItem("products", JSON.stringify(obj));
-  window.location.href = "single.html";
-};
-
-const addtowishlist = ({
-  img1,
-  img,
-  img2,
-  pname,
-  offprice,
-  price,
-  Ratings,
-}) => {
-  let obj = {
-    img1,
-    img,
-    img2,
-    pname,
-    offprice,
-    price,
-    Ratings,
-  };
-  localStorage.setItem("wishlist", JSON.stringify(obj));
-};
-
-const addtocart = ({ img1, img, img2, pname, offprice, price, Ratings }) => {
-  let obj = {
-    img1,
-    img,
-    img2,
-    pname,
-    offprice,
-    price,
-    Ratings,
-  };
-  localStorage.setItem("cart", JSON.stringify(obj));
-};
 
 const showProduct = ({ img1, img, img2, pname, offprice, price, Ratings }) => {
   let obj = {
@@ -81,20 +34,13 @@ const addtowishlist = ({
     Ratings,
   };
   localStorage.setItem("wishlist", JSON.stringify(obj));
+  alert("Added to Wishlist");
 };
 let cart_data = JSON.parse(localStorage.getItem("cart")) || [];
 const addtocart = ({ img1, img, img2, pname, offprice, price, Ratings }) => {
-  let obj = {
-    img1,
-    img,
-    img2,
-    pname,
-    offprice,
-    price,
-    Ratings,
-  };
-  cart_data.push(obj);
+  cart_data.push({ img1, img, img2, pname, offprice, price, Ratings });
   localStorage.setItem("cart", JSON.stringify(cart_data));
+  alert("Added To Cart");
 };
 
 const productAppend = (data) => {
