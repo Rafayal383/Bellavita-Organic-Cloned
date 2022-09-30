@@ -14,7 +14,7 @@ const showProduct = ({ img1, img, img2, pname, offprice, price, Ratings }) => {
   localStorage.setItem("products", JSON.stringify(obj));
   window.location.href = "single.html";
 };
-
+let wishlist_data = JSON.parse(localStorage.getItem("wishlist")) || [];
 const addtowishlist = ({
   img1,
   img,
@@ -24,7 +24,8 @@ const addtowishlist = ({
   price,
   Ratings,
 }) => {
-  let obj = {
+  alert("Added to Wishlist");
+  wishlist_data.push({
     img1,
     img,
     img2,
@@ -32,9 +33,9 @@ const addtowishlist = ({
     offprice,
     price,
     Ratings,
-  };
-  localStorage.setItem("wishlist", JSON.stringify(obj));
-  alert("Added to Wishlist");
+  })
+  localStorage.setItem("wishlist", JSON.stringify(wishlist_data));
+
 };
 let cart_data = JSON.parse(localStorage.getItem("cart")) || [];
 const addtocart = ({ img1, img, img2, pname, offprice, price, Ratings }) => {
