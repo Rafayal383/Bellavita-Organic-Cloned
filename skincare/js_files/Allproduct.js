@@ -1,11 +1,11 @@
-import FacecreamData from "./skincare_2.js"
+import skinproductData from "./skincare.js"
 import { Box } from "./box.js";
-let product_array = FacecreamData;
+let product_array = skinproductData;
 
 
-localStorage.setItem("FacecreamData", JSON.stringify(FacecreamData));
+localStorage.setItem("skinproductData", JSON.stringify(skinproductData));
 
-let data = JSON.parse(localStorage.getItem("FacecreamData"));
+let data = JSON.parse(localStorage.getItem("skinproductData"));
 
 const productAppend = (data) => {
   let container = document.getElementById("main");
@@ -36,3 +36,9 @@ function addTocart() {
 function productPage() {
   window.location.href = "single.html";
 }
+
+
+
+
+
+
