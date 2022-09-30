@@ -21,17 +21,20 @@ form{
 form>input{
     height: 40px;
     color: #475d4b;
+    padding: 0 20px;
+    font-size: 18px;
 }
 
 #submt{
 
     width: 30%;
     margin: auto;
+    /* text-align: center; */
     border-radius: 5px;
     border: none;
     background-color: #475d4b;
     color: white;
-    font-size: 16px;
+    font-size: 17px;
 
 }
 
