@@ -1,0 +1,36 @@
+body{
+    background-image: url(https://media.istockphoto.com/vectors/payment-options-vector-id614532046?k=20&m=614532046&s=612x612&w=0&h=vRSWsS3imMGBrhPdDgAE5yMo9iVvCRyeGoDZ6WX3n7k=);
+}
+#container{
+    background-color:#ffd662ff;
+    border: 1px solid black;
+    width: 30%;
+    margin: auto;
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 50px;
+}
+#container>div{
+    margin-top: 40px;
+    padding: 30px 25px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    
+}
+#upi,#netB,#card{
+    background-color: #00539cff;
+
+}
+
+#container>div>div{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+button{
+    background-color: green;
+    border: none;
+}
