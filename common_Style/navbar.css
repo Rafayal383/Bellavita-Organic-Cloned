@@ -91,6 +91,8 @@
   position: fixed;
   left: 11%;
   z-index: 100;
+  background-color: #fff;
+  position: sticky;
 }
 #nav_menu > div {
   position: relative;

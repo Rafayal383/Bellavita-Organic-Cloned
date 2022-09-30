@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../common_Style/common.css">
+    <link rel="stylesheet" href="payment.css">
+
+</head>
+<body>
+    <div id="container">
+        <div id="upi">
+            Pay By Upi
+            <div>
+                <input type="email" id="email" placeholder="Enter upi Id">
+                <button onclick="paybyupi()">Pay</button>
+            </div>
+        </div>
+        <div id="card">
+            Pay By card
+            <div>
+                <input type="number" id="cdn" placeholder="Enter Card No">
+            <input type="month" id="exd">
+            <input type="password" id="cvv" placeholder="Enter cvv">
+            <input type="password" id="pin" placeholder="Enter atm pin ">
+            <button onclick="paybycard()">Pay</button>
+
+            </div>
+        </div>
+        <div id="netB">
+            Pay By Netbanking
+           <div>
+            <input type="text" id="id" placeholder="Enter Netbanking Id">
+            <input type="password" id="psd" placeholder="Enter Netbanking password">
+            <button onclick="paybynet()">Pay</button>
+
+           </div>
+        </div>
+        
+    </div>
+</body>
+</html>
+email
+<script>
+const paybyupi =() =>{
+    let input =document.getElementById("email").value;
+
+    if (input.length<2 || input.includes("@")==false){
+        alert("invalid upi id")
+    }else{
+        alert("payment sucessfull")
+        alert("Order sucessfull")
+        window.location=""
+    }
+}
+
+const paybynet =()=>{
+    let input =document.getElementById("id").value;
+    let input2 =document.getElementById("psd").value;
+    if(!input || !input2){
+        alert("wrong creds")
+    }else{
+        alert("payment sucessfull")
+        alert("Order sucessfull")
+        window.location=""
+    }
+
+}
+
+
+const paybycard =()=>{
+    let inp1 = document.getElementById("cdn").value
+    let inp2 = document.getElementById("cvv").value
+    let inp3 = document.getElementById("pin").value
+
+    if(!inp1 || !inp2 || !inp3){
+        alert("Enter valid input")
+        return;
+    }else if(inp1.length!=16){
+        alert("please enter a valid card number")
+        return;
+    }
+    alert("payment sucessfull")
+        alert("Order sucessfull")
+        window.location=""
+}
+
+
+
+</script>

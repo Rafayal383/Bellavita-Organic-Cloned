@@ -1,0 +1,151 @@
+.topContainer{
+    background-image: url(./bgc_op.jpg);
+    height: 170px;
+}
+.logo{
+    width: 70%;
+    margin: auto;  
+    padding-top: 50px;  
+}
+.logo img{
+    width: 150px;
+}
+
+.midSection{
+    width: 80%;
+    margin: auto;
+    display: flex;
+
+}
+.midSection>div{
+    width: 50%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.payment{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.form{
+    border: 1px solid rgb(155, 154, 154);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px;
+}
+.form>div{
+    width: 100%;
+    border: 1px solid rgb(155, 154, 154);
+    padding: 30px;
+}
+
+.contactDetails{
+    margin-top: 60px;
+}
+.contactDetails>p{
+    margin-bottom: 13px;
+}
+
+.form input{
+  width: 80%;
+  border: none;
+  border-bottom: 1px solid gainsboro;
+}
+
+.mainpayment{
+    width: 60%;
+    margin: auto;
+    
+    display: flex;
+    justify-content: space-between;
+}
+.mainpayment button{
+    width: 150px;
+    height: 80px;
+    font-size: 22px;
+    border: 1px solid rgb(155, 154, 154);
+    border-radius: 20px;
+}
+
+.mainpayment :first-child{
+    background-color: yellow;
+}
+
+.mainpayment :last-child{
+    background-color: green;
+}
+.mainpayment button:hover{
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 90%;
+}
+.payment a{
+    text-decoration: dashed;
+    color: green;
+}
+
+
+.cartData{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.saveddata{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.saveddata>div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    padding: 5px;
+    border-radius: 10px;
+}
+.saveddata>div>img{
+    height: 60px;
+}
+.saveddata>div>img+div{
+    width: 300px;
+}
+
+.coupon input {
+    height: 35px;
+    width: 70%;
+}
+.coupon button{
+    height: 35px;
+    width: 70px;
+    background-color: darkgreen;
+    border: none;
+    color: white;
+    font-size: 17px;
+}
+.coupon button:hover{
+    cursor: pointer;
+}
+
+.amtDetails>div{
+    display: flex ;
+    justify-content: space-between;
+}
+.lastTotal{
+    display: flex;
+    justify-content: space-between;
+
+}
+.two{
+
+    display: flex;
+    flex-direction: column;
+}
+.netamt2{
+    font-weight:500;
+    font-size: 26px;
+}
