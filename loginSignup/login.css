@@ -1,0 +1,36 @@
+#container{
+    width: 30%;
+    height: 400px;
+    border: 0px solid red;
+    text-align: center;
+    margin: auto;
+    margin-top: 10%
+}
+.h2{
+
+  width: 95%;
+  text-align: center;
+}
+
+input{
+
+  height: 30px;
+}
+form{
+ display: grid;
+ gap: 10px;
+ 
+}
+
+#submit{
+  
+  width: 40%;
+  height: 35px;
+  margin: auto;
+  border-radius: 5px;
+  border: none;
+  background-color: #475d4b;
+  color: white;
+  font-size: 16px;    
+
+}
