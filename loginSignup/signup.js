@@ -16,7 +16,8 @@ function signUp(){
    console.log(obj)
 
    localStorage.setItem("user",JSON.stringify(data));
-   window.location = "../index.html"
+   alert("sign up sucessfull")
+   window.location = "/dreary-hand-8237/landingPage/landing.html"
 
 
 }
