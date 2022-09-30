@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="../common_Style/common.css">
+    <link rel="stylesheet" href="./checkout.css">
+
+
+</head>
+<body>
+    <div class="topContainer">
+        <div class="logo">
+            <img src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/bellavita-logo_256x256_2cf787ef.png?55708" alt="">
+        </div>
+    </div>
+    <div class="midSection">
+        <div class="payment">
+            <div class="contactDetails">
+                <p>Payment > Cart > Information > Shipping > Payment</p>
+                <div class="form">
+                    <div class="email">
+                        <label for="contact">Contact :</label>
+                        <input type="text" id="contact">
+                    </div>
+                    <div class="address">
+                        <label for="address">Address :</label>
+                        <input type="text" id="address">
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h3>Payment</h3>
+                <p>All transactions are secure and encrypted.</p>
+            </div>
+            <div class="mainpayment">
+                <button onclick="COD()">Cash On Delivery</button>
+                <button onclick="PAY()">Pay Now</button>
+            </div>
+            <a href="#">Continue Shopping 👉</a>
+        </div>
+        <div class="cartData">
+            <div class="saveddata">
+                <div>
+                    <img src="https://dummyimage.com/600x400/000/fff" alt="">
+                    <div>
+                        <p>Lorem ipsum dol lor or sit amet.</p>
+                    </div>
+                    <p>₹ <span id="amount">300.00</span> </p>
+                </div>
+                <div>
+                    <img src="https://dummyimage.com/600x400/000/fff" alt="">
+                    <div>
+                        <p>Lorem ipsum dol lor or sit amet.</p>
+                    </div>
+                    <p>₹ <span id="amount">300.00</span> </p>
+                </div>
+                <div>
+                    <img src="https://dummyimage.com/600x400/000/fff" alt="">
+                    <div>
+                        <p>Lorem ipsum dolor sit amet lorem20 .</p>
+                    </div>
+                    <p>₹ <span id="amount">300.00</span> </p>
+                </div>
+                <div>
+                    <img src="https://dummyimage.com/600x400/000/fff" alt="">
+                    <div>
+                        <p>Lorem ipsum dol lor or sit amet.</p>
+                    </div>
+                    <p>₹ <span id="amount">300.00</span> </p>
+                </div>
+            </div>
+            <hr>
+            <div class="coupon">
+                <input type="text">
+                <button onclick="coupon()">Apply</button>
+            </div>
+            <hr>
+            <div class="amtDetails">
+                <div class="amt">
+                    <p>Subtotal</p>
+                    <p>₹ <span class="netamt">396</span></p>
+                </div>
+                <div class="ship">
+                    <p>Shipping</p>
+                    <p>Free</p>
+                </div>
+            </div>
+            <hr>
+            <div class="lastTotal">
+                <div class="one">
+                    <h3>Total</h3>
+                    <p>including ₹60.41 in taxes</p>
+                </div>
+                <div class="two">
+                    <p>INR₹ <span class="netamt2">396.00</span></p>
+                
+                    
+                    
+                </div>
+            </div>
+        </div>      
+    </div>
+</body>
+</html>
+<script>
+    
+const COD=() =>{
+    let contact = document.getElementById("contact").value
+    let address = document.getElementById("address").value
+    if(contact==="" || address===""){
+        alert("invalid credentials");
+        return;
+    }else{
+        alert("Order placed you will recieve further updates on email")
+    }
+}
+
+const PAY=()=>{
+    window.location="payment.html"
+}
+
+const coupon =()=>{
+    alert("invalid coupon")
+}
+</script>
