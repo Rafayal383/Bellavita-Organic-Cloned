@@ -1,3 +1,5 @@
+
+
 let flag = false;
 let click = document.querySelector(".skindropdown");
 
@@ -10,9 +12,10 @@ function ShowSkinCareOpt(){
         flag=false
     }
 }
+document.querySelector(".skincarefn").addEventListener("click",ShowSkinCareOpt)
 
 
-
+document.querySelector(".bodycarefn").addEventListener("click",ShowBodyCareOpt)
 let bodyflag = false;
 let bodyclick = document.querySelector(".bodydropdown");
 
@@ -27,7 +30,7 @@ function ShowBodyCareOpt(){
 } 
 
 
-
+document.querySelector(".perfumefn").addEventListener("click",ShowPerfumeOpt)
 let perfumeflag = false;
 let perfume = document.querySelector(".pddown");
 function ShowPerfumeOpt(){
@@ -40,7 +43,7 @@ function ShowPerfumeOpt(){
     }
 }
 
-
+document.querySelector(".combofn").addEventListener("click",showcomboopt)
 let comboflag = false;
 let combo = document.querySelector(".comboddn");
 function showcomboopt(){
@@ -52,3 +55,4 @@ function showcomboopt(){
         comboflag=false
     }
 }
+
