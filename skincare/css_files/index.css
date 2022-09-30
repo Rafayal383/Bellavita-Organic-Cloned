@@ -181,3 +181,22 @@ margin-left: 85%;
 
 }
 
+.sort_section {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: row-reverse;
+  margin-bottom: 10px;
+}
+.sort_section select {
+  color: #475d4b;
+  border: none;
+}
+option {
+  border: none;
+}
+.sort_section {
+  font-size: 13px;
+  font-family: "Poppins", sans-serif;
+  border: none;
+}
