@@ -16,7 +16,7 @@ function signUp(){
    console.log(obj)
 
    localStorage.setItem("user",JSON.stringify(data));
-   window.location = "../dreary-hand/index.html"
+   window.location = "../index.html"
 
 
 }
