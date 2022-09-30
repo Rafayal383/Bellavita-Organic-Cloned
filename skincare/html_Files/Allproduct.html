@@ -16,14 +16,30 @@
 
 <hr>
 
-<select id="filter">
+<!-- <select id="filter">
   <option value="">Select Category</option>
   <option value="LtoH">Low to High</option>
   <option value="HtoL">High to Low</option>
-  <!-- <option value="">Finance</option> -->
-</select>
+
+</select> -->
 
     <div id="sidebar"></div>
+
+
+    <div class="sort_section">
+      <div id="total"></div>
+      <div class="sort">
+        <label for="">SortBy:</label>
+        <select name="sort_by" id="SortBy">
+          <option value="manual" selected="selected">Featured</option>
+          <option value="best-selling">Best selling</option>
+          <option value="title-ascending">Alphabetically, A-Z</option>
+          <option value="title-descending">Alphabetically, Z-A</option>
+          <option value="price-ascending">Price, low to high</option>
+          <option value="price-descending">Price, high to low</option>
+        </select>
+      </div>
+    </div>
 
     <div id="main"></div>
 
