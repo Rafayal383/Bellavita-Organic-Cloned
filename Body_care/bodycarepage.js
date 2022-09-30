@@ -1,42 +1,162 @@
-// import allProducts from "../DataAll/alProduct.js";
 import bodycaredata from "../DataAll/body_care.js";
-import { Box } from "../DataAll/box.js";
 let product_array = bodycaredata;
+const showProduct = ({ img1, img, img2, pname, offprice, price, Ratings }) => {
+  let obj = {
+    img1,
+    img,
+    img2,
+    pname,
+    offprice,
+    price,
+    Ratings,
+  };
+  localStorage.setItem("products", JSON.stringify(obj));
+  window.location.href = "single.html";
+};
+
+const addtowishlist = ({
+  img1,
+  img,
+  img2,
+  pname,
+  offprice,
+  price,
+  Ratings,
+}) => {
+  let obj = {
+    img1,
+    img,
+    img2,
+    pname,
+    offprice,
+    price,
+    Ratings,
+  };
+  localStorage.setItem("wishlist", JSON.stringify(obj));
+};
+
+const addtocart = ({ img1, img, img2, pname, offprice, price, Ratings }) => {
+  let obj = {
+    img1,
+    img,
+    img2,
+    pname,
+    offprice,
+    price,
+    Ratings,
+  };
+  localStorage.setItem("cart", JSON.stringify(obj));
+};
+
+const showProduct = ({ img1, img, img2, pname, offprice, price, Ratings }) => {
+  let obj = {
+    img1,
+    img,
+    img2,
+    pname,
+    offprice,
+    price,
+    Ratings,
+  };
+  localStorage.setItem("products", JSON.stringify(obj));
+  window.location.href = "single.html";
+};
+
+const addtowishlist = ({
+  img1,
+  img,
+  img2,
+  pname,
+  offprice,
+  price,
+  Ratings,
+}) => {
+  let obj = {
+    img1,
+    img,
+    img2,
+    pname,
+    offprice,
+    price,
+    Ratings,
+  };
+  localStorage.setItem("wishlist", JSON.stringify(obj));
+};
+let cart_data = JSON.parse(localStorage.getItem("cart")) || [];
+const addtocart = ({ img1, img, img2, pname, offprice, price, Ratings }) => {
+  let obj = {
+    img1,
+    img,
+    img2,
+    pname,
+    offprice,
+    price,
+    Ratings,
+  };
+  cart_data.push(obj);
+  localStorage.setItem("cart", JSON.stringify(cart_data));
+};
 
 const productAppend = (data) => {
   let container = document.getElementById("main");
   container.innerHTML = null;
   data.forEach(({ img1, img, img2, pname, offprice, price, Ratings }) => {
     let div = document.createElement("div");
-    div.innerHTML = Box({ img1, img, img2, pname, offprice, price, Ratings });
-    div.addEventListener("click", () => {
-      let obj = {
-        img1,
-        img,
-        img2,
-        pname,
-        offprice,
-        price,
-        Ratings,
-      };
-      localStorage.setItem("products", JSON.stringify(obj));
-      window.location.href = "single.html";
-    });
-    container.append(div);
-  });
 
-  let buttons = document.getElementById("button");
-  buttons.addEventListener("click", function () {
-    addTocart();
+    let img_1 = document.createElement("div");
+    img_1.innerHTML = `<img src="${img1}"
+    alt="">`;
+    img_1.id = "best";
+    let off = document.createElement("div");
+    off.innerText = `35% OFF`;
+    off.id = "off";
+    let image_div = document.createElement("div");
+    image_div.id = "image";
+    image_div.innerHTML = `<img id="product_img" src=${img} 
+    alt="">
+ <div class="inner">
+ <img src=${img2} /></div>`;
+    image_div.addEventListener("click", function () {
+      showProduct({ img1, img, img2, pname, offprice, price, Ratings });
+    });
+    let wishlist = document.createElement("i");
+    wishlist.id = "wishlist";
+    wishlist.className = "fa-regular fa-heart";
+    wishlist.addEventListener("click", function () {
+      addtowishlist({ img1, img, img2, pname, offprice, price, Ratings });
+    });
+    let p_name = document.createElement("div");
+    p_name.innerHTML = `<p id="bigp">${pname}</p><br>
+<p id="smallp"></p>`;
+    let price_div = document.createElement("div");
+    price_div.id = "price";
+    price_div.innerHTML = `<p><i class="fa-solid fa-indian-rupee-sign"></i>${offprice}</p>
+<p><i class="fa-solid fa-indian-rupee-sign"></i>${price}</p>`;
+    let star = document.createElement("div");
+    star.id = "star";
+    star.innerHTML = `<i class="fa-sharp fa-solid fa"><i class="fa-solid fa-star">${Ratings}</i></i>`;
+    let addItem = document.createElement("button");
+    addItem.innerText = "Add to Cart";
+    addItem.id = "addtocart";
+    addItem.addEventListener("click", function () {
+      addtocart({ img1, img, img2, pname, offprice, price, Ratings });
+    });
+    div.append(
+      img_1,
+      off,
+      image_div,
+      wishlist,
+      p_name,
+      price_div,
+      star,
+      addItem
+    );
+    container.append(div);
   });
 };
 console.log(product_array);
 
 productAppend(product_array);
-
-function addTocart() {
-  window.location.href = "#";
-}
 
 document.querySelector("#SortBy").addEventListener("change", handlePriceSort);
 function handlePriceSort() {
@@ -95,8 +215,3 @@ function handlePriceSort() {
     productAppend(product_array);
   }
 }
-
-// let total = document.getElementById("total").innerHTML;
-// total = product_array.length;
-// let sort = document.querySelector(".sort_section");
-// sort.append(total);

@@ -6,6 +6,7 @@ let skinproductData = [
       pname: "C-Glow Face Wash, 100ml",
       offprice: "174.00",
       price: "249.00",
+    
       Ratings: "4.5",
     },
    
@@ -16,6 +17,7 @@ let skinproductData = [
         pname: "EyeLift Under Eye Cream, 20gm",
         offprice: "211.00",
         price: "325.00",
+
         Ratings: "4.5",
       },
    
@@ -28,6 +30,7 @@ let skinproductData = [
         pname: "Ayurvedic Kumkumadi Face Oil, 30ml",
         offprice: "389.00",
         price: "599.00",
+       
         Ratings: "4.5",
       },
    
@@ -40,6 +43,7 @@ let skinproductData = [
         pname: "Anti Acne, Pimple Scar Spots Removal Gel For Men & Women, 50gm",
         offprice: "259.00",
         price: "399.00",
+   
         Ratings: "5",
       },
    
@@ -53,6 +57,7 @@ let skinproductData = [
         pname: "Kumkumadi Face Wash - 100ml",
         offprice: "259.00",
         price: "399.00",
+      
         Ratings: "4.4",
       },
    
@@ -66,6 +71,7 @@ let skinproductData = [
         pname: "The Lip Balm , 5gm",
         offprice: "158.00",
         price: "225.00",
+       
         Ratings: "3.8",
       },
    
@@ -79,6 +85,7 @@ let skinproductData = [
         pname: "De Tan Face Pack For Glowing Skin,100gm",
         offprice: "259.00",
         price: "399.00",
+       
         Ratings: "4.2",
       },
    
@@ -92,6 +99,7 @@ let skinproductData = [
         pname: "Anti acne face wash",
         offprice: "174.00",
         price: "299.00",
+   
         Ratings: "4.5",
       },
    
@@ -105,6 +113,7 @@ let skinproductData = [
         pname: "C-Glow Face Wash, 100ml",
         offprice:"263.00",
         price: "375.00",
+       
         Ratings: "4.5",
       },
      
@@ -117,6 +126,7 @@ let skinproductData = [
         pname: "Natural Anti Pollution Combo",
         offprice: "174.00",
         price: "367.00",
+       
         Ratings: "4.0",
       },
    
@@ -130,6 +140,7 @@ let skinproductData = [
         pname: "Day Glow SPF 30+ Sunscreen,100ml",
         offprice:"244.00",
         price: "349.00",
+     
         Ratings:"4.5",
       },
    
@@ -144,6 +155,7 @@ let skinproductData = [
         pname: "C-Glow Face Pack, 100gm",
         offprice:"259.00",
         price: "399.00",
+    
         Ratings: "4.5",
       },
    
