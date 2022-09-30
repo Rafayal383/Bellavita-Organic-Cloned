@@ -132,7 +132,7 @@ body {
   border: 1px solid orange;
 } */
 
-button {
+#addtocart {
   width: 98%;
   height: 45px;
   background-color: #475d4b;
@@ -147,12 +147,12 @@ button {
 }
 #image {
   position: relative;
-  height: 100%;
   width: 100%;
 }
 #image img,
 .inner {
   width: 100%;
+  cursor: pointer;
 }
 .inner {
   position: absolute;
@@ -168,4 +168,27 @@ button {
 }
 #off {
   z-index: 100;
+}
+.sort_section {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: row-reverse;
+  margin-bottom: 10px;
+}
+.sort_section select {
+  color: #475d4b;
+  border: none;
+}
+option {
+  border: none;
+}
+.sort_section {
+  font-size: 13px;
+  font-family: "Poppins", sans-serif;
+  border: none;
+}
+
+#wishlist {
+  cursor: pointer;
 }
