@@ -6,7 +6,6 @@ for(let i=0;i<4;i++){
   product_array[i]=bestsellerdata[i];
 }
 console.log("aabrakadaabra");
-let stopper=1;
 
 const productAppend = (data) => {
   let container = document.getElementById("main");
@@ -32,10 +31,11 @@ console.log(product_array);
 
 productAppend(product_array);
 
-// function addTocart() {
-//   window.location.href = "#";
-// }
-// // function productPage() {
-// //   window.location.href = "single.html";
-// // }
+function addTocart() {
+  // window.location.href = "";
+  console.log("runnig")
+}
+function productPage() {
+  window.location.href = "single.html";
+}
 
