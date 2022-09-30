@@ -132,7 +132,7 @@ body {
   border: 1px solid orange;
 } */
 
-button {
+#addtocart {
   width: 98%;
   height: 45px;
   background-color: #475d4b;
@@ -147,7 +147,6 @@ button {
 }
 #image {
   position: relative;
-  height: 100%;
   width: 100%;
 }
 #image img,
