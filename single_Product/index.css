@@ -21,9 +21,7 @@ body {
 #wishlist {
   margin-left: 5%;
 }
-#major {
-  display: flex;
-}
+
 #main {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
