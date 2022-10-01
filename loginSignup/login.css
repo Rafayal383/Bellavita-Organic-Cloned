@@ -12,8 +12,8 @@
   text-align: center;
 }
 
-input{
-
+#email,#password{
+  padding: 25px;
   height: 40px;
   margin-top: 5%;
 }
@@ -24,7 +24,7 @@ form{
 }
 
 #submit{
-  
+  padding: 10px;
   width: 40%;
   height: 35px;
   margin: auto;
