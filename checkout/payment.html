@@ -10,30 +10,50 @@
 
 </head>
 <body>
+    
+    <div id="header">
+      
+        <div class="logo">
+            <img src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/bellavita-logo_256x256_2cf787ef.png?55708" alt="">
+        </div>
+
+     </div>
+
     <div id="container">
         <div id="upi">
-            Pay By Upi
+           <h4>Pay By Upi</h4> 
+           <div id="Image">
+           <img src="upi.png" alt="">
+        </div>
             <div>
                 <input type="email" id="email" placeholder="Enter upi Id">
                 <button onclick="paybyupi()">Pay</button>
             </div>
         </div>
         <div id="card">
-            Pay By card
+            <h4 id="bycard">Pay By card</h4>
+            <div id="Image_1">
+             
+                <img src="allpay.png" alt="">
+             </div>
             <div>
                 <input type="number" id="cdn" placeholder="Enter Card No">
             <input type="month" id="exd">
-            <input type="password" id="cvv" placeholder="Enter cvv">
-            <input type="password" id="pin" placeholder="Enter atm pin ">
+            <input type="text" id="cvv" placeholder="Enter cvv">
+            <input type="text" id="pin" placeholder="Enter atm pin ">
             <button onclick="paybycard()">Pay</button>
 
             </div>
         </div>
         <div id="netB">
-            Pay By Netbanking
+            <h4>Pay By Netbanking</h4>
+            <div id="Image_2">
+             
+                <img src="net.png" alt="">
+             </div>
            <div>
             <input type="text" id="id" placeholder="Enter Netbanking Id">
-            <input type="password" id="psd" placeholder="Enter Netbanking password">
+            <input type="text" id="psd" placeholder="Enter Netbanking password">
             <button onclick="paybynet()">Pay</button>
 
            </div>
@@ -42,7 +62,7 @@
     </div>
 </body>
 </html>
-email
+
 <script>
 const paybyupi =() =>{
     let input =document.getElementById("email").value;
