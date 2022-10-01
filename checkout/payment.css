@@ -1,29 +1,70 @@
+
 body{
-    background-image: url(https://media.istockphoto.com/vectors/payment-options-vector-id614532046?k=20&m=614532046&s=612x612&w=0&h=vRSWsS3imMGBrhPdDgAE5yMo9iVvCRyeGoDZ6WX3n7k=);
+
+    background-image: url(flo.png);
+  background-repeat: no-repeat;
+    background-position: top;
+    
+
 }
-#container{
-    background-color:#ffd662ff;
-    border: 1px solid black;
-    width: 30%;
+
+#header {
+
+    display: flex;
+ 
+}
+
+.logo{
+ 
+    /* margin: auto;   */
+    margin-left: 43%;
+    margin-bottom: 10px;
+    padding-top: 20px;  
+}
+.logo  > img{
+    width: 140px;
+    margin-top: 80px;
+
+}
+
+
+
+#header img{
+
+ opacity: 0.7;
+    margin-left: 20px;
+    position: absolute;
+}
+
+
+
+ #container{
+    
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 50%;
     margin: auto;
-    margin-top: 4rem;
+    margin-top: 10rem;
+   
     display: flex;
     flex-direction: column;
     gap: 20px;
     padding: 50px;
-}
+} 
 #container>div{
     margin-top: 40px;
     padding: 30px 25px;
-    border: 1px solid black;
     display: flex;
+  box-shadow: rgba(0, 0, 0, 0.20) 0px 1px 4px;  
+  /* box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px; */
+    width: 90%;
+    margin: auto;
     flex-direction: column;
-    
 }
-#upi,#netB,#card{
-    background-color: #00539cff;
+/* #upi,#netB,#card{
+ 
 
-}
+
+} */
 
 #container>div>div{
     display: flex;
@@ -31,6 +72,63 @@ body{
     gap: 2px;
 }
 button{
-    background-color: green;
+    background-color:#475D4B;
+    color: white;
+    font-weight: 700;
+    font-size: 17px;
+    width: 200px;
+    height: 33px;
+    border-radius: 6px;
+    margin-left: 27%;
     border: none;
+}
+
+button:hover{
+
+    cursor: pointer;
+    background-color:#1b2e20;
+    transition: background-color 0.2s;
+}
+
+input{
+
+    width: 300px;
+    height: 35px;
+    margin: 10px 17%;
+}
+
+h4{
+
+    margin-left: 28%;
+}
+
+#image{
+
+    display: flex;
+}
+
+#Image img{
+
+    width: 11%;
+    margin-left: 50%;
+    margin-top: -19px;
+}
+
+#Image_1 img{
+    width: 32%;
+    margin-left: 44%;
+    margin-top: -22px;
+}
+
+
+#Image_2 img{
+
+    width: 11%;
+    margin-left: 63%;
+    margin-top: -35px;
+}
+
+#bycard{
+
+    margin-left: 95px;
 }
