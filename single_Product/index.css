@@ -9,10 +9,10 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-#navbar {
+/* #navbar {
   width: 100%;
-  height: 90px;
-}
+  height: auto;
+} */
 
 #sidebar {
   width: 20%;
@@ -20,6 +20,9 @@ body {
 
 #wishlist {
   margin-left: 5%;
+}
+#major {
+  display: flex;
 }
 #main {
   display: grid;

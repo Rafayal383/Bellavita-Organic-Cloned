@@ -1,4 +1,7 @@
 // import allProducts from "../DataAll/alProduct.js";
+import navbar from "../common_Style/navbar.js";
+document.getElementById("navbar").innerHTML = navbar();
+
 import bestsellerdata from "../DataAll/bestSeller.js";
 //import { Box } from "../DataAll/box.js";
 let product_array = bestsellerdata;
@@ -107,3 +110,61 @@ const productAppend = (data) => {
 console.log(product_array);
 
 productAppend(product_array);
+
+document.querySelector("#SortBy").addEventListener("change", handlePriceSort);
+function handlePriceSort() {
+  let selected = document.querySelector("#SortBy").value;
+  if (selected == "price-ascending") {
+    product_array.sort(function (a, b) {
+      let x = +a.price;
+      let y = +b.price;
+      if (x > y) return 1;
+      if (x < y) return -1;
+      return 0;
+    });
+    productAppend(product_array);
+    console.log("abc");
+  }
+  if (selected == "price-descending") {
+    product_array.sort(function (a, b) {
+      let x = +a.price;
+      let y = +b.price;
+      if (x > y) return -1;
+      if (x < y) return 1;
+      return 0;
+    });
+    productAppend(product_array);
+  }
+  if (selected == "title-descending") {
+    product_array.sort(function (a, b) {
+      let x = a.pname;
+      let y = b.pname;
+      if (x > y) return -1;
+      if (x < y) return 1;
+      return 0;
+    });
+    productAppend(product_array);
+  }
+  if (selected == "title-ascending") {
+    product_array.sort(function (a, b) {
+      let x = a.pname;
+      let y = b.pname;
+      if (x > y) return 1;
+      if (x < y) return -1;
+      return 0;
+    });
+    productAppend(product_array);
+  }
+  if (selected == "selected") {
+    productAppend(product_array);
+  }
+  if (selected == "best-selling") {
+    product_array = product_array.filter(function (el) {
+      return (
+        el.img1 ==
+        "https://cdn.shopify.com/s/files/1/0054/6665/2718/files/Best-sellers-tag.png?v=10809169506792369733"
+      );
+    });
+    productAppend(product_array);
+  }
+}
