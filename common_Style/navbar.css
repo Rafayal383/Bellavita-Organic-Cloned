@@ -10,6 +10,9 @@
   color: #475d4b;
   font-size: 17px;
 }
+#navbar {
+  margin-bottom: 20px;
+}
 #nav_item {
   width: 78%;
   margin: auto;

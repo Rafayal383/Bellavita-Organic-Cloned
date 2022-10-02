@@ -9,7 +9,9 @@
   <link rel="stylesheet" href="../common_Style/common.css" />
   <link rel="stylesheet" href="productPage.css" />
   <link rel="stylesheet" href="index.css" />
-  <link rel="stylesheet" href="/common_Style/navbar.css" />
+  <link rel="stylesheet" href="../common_Style/common.css" />
+  <link rel="stylesheet" href="../common_Style/sidebar.css" />
+  <link rel="stylesheet" href="../common_Style/navbar.css" />
 
   <script
     src="https://kit.fontawesome.com/24c494a6b6.js"
@@ -18,30 +20,107 @@
 
   <body>
     <div id="navbar"></div>
-    
+    <div class="sort_section">
+      <div id="total"></div>
+      <div class="sort">
+        <label for="">SortBy:</label>
+        <select name="sort_by" id="SortBy">
+          <option value="manual" selected="selected">Featured</option>
+          <option value="best-selling">Best selling</option>
+          <option value="title-ascending">Alphabetically, A-Z</option>
+          <option value="title-descending">Alphabetically, Z-A</option>
+          <option value="price-ascending">Price, low to high</option>
+          <option value="price-descending">Price, high to low</option>
+        </select>
+      </div>
+    </div>
+    <div id="major">
       <div id="sidebar">
-       
+        <div class="refine">
+          <div class="refineIMGdiv">
+            <img
+              src="https://t3.ftcdn.net/jpg/03/20/78/84/240_F_320788475_nEiLVViOBewea7taZWqNUR0lJAMTAaSo.jpg"
+              alt=""
+            />
+          </div>
+          <p>REFINE BY</p>
+        </div>
+        <p class="cat">CATEGORIES</p>
+        <hr />
+        <div class="sidemenu">
+          <a href="#">Shop All</a>
+        </div>
+        <div class="sidemenu">
+          <a href="#">Diwali Giveaway</a>
+        </div>
+        <div class="sidemenu">
+          <a href="#">Bestsellers</a>
         </div>
 
-        
-      <hr />
-      <div class="sort_section">
-        <div id="total"></div>
-        <div class="sort">
-          <label for="">SortBy:</label>
-          <select name="sort_by" id="SortBy">
-            <option value="manual" selected="selected">Featured</option>
-            <option value="best-selling">Best selling</option>
-            <option value="title-ascending">Alphabetically, A-Z</option>
-            <option value="title-descending">Alphabetically, Z-A</option>
-            <option value="price-ascending">Price, low to high</option>
-            <option value="price-descending">Price, high to low</option>
-          </select>
+        <div class="sidemenu skincarefn">
+          <a href="#">Skin Care</a>
+          <p>⮟</p>
+        </div>
+        <div class="skindropdown display">
+          <a href="#">FACE CREAM</a>
+          <a href="#">FACE PACK/MASK</a>
+          <a href="#">FACE SERUM</a>
+          <a href="#">FACE SCRUB</a>
+          <a href="#">FACE TONER</a>
+          <a href="#">FACE GEL</a>
+          <a href="#">FACE MOISTURISERS</a>
+        </div>
+
+        <div class="sidemenu bodycarefn">
+          <a href="#">Body Care</a>
+          <p>⮟</p>
+        </div>
+        <div class="bodydropdown display">
+          <a href="#">ALL BODY CARE PRODUCTS</a>
+          <a href="#">BODY SOAPS</a>
+          <a href="#">BODY WASH</a>
+          <a href="#">BODY SCRUB</a>
+          <a href="#">BODY LOTION</a>
+        </div>
+
+        <div class="sidemenu perfumefn">
+          <a href="#">Perfumes</a>
+          <p>⮟</p>
+        </div>
+        <div class="pddown display">
+          <a href="#">ALL PERFUMES</a>
+          <a href="#">PERFUMES FOR HER</a>
+          <a href="#">PERFUMES FOR HIM</a>
+          <a href="#">UNISEX PERFUMES</a>
+          <a href="#">BODY PARFUM</a>
+          <a href="#">LITTLE LUXURIES</a>
+          <a href="#">GIFT SETS</a>
+        </div>
+
+        <div class="sidemenu combofn">
+          <a href="#">Combos & Gifts</a>
+          <p>⮟</p>
+        </div>
+        <div class="comboddn display">
+          <a href="#">GIFT BOXES</a>
+          <a href="#">ALL COMBOS</a>
+          <a href="#">BESTSELLER COMBOS</a>
+          <a href="#">SKIN COMBOS</a>
+          <a href="#">HAIR COMBOS</a>
+          <a href="#">BODY COMBOS</a>
+          <a href="#">PERFUME COMBOS</a>
+          <a href="#">C GLOW RANGE</a>
+          <a href="#">KUMKUMADI RANGE</a>
+        </div>
+
+        <div class="sidemenu">
+          <a href="#">Build a Box</a>
         </div>
       </div>
+      <hr />
+
       <div id="main"></div>
     </div>
-
     <div id="footer"></div>
   </body>
 </html>

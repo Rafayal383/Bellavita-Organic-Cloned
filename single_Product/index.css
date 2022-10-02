@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 
 * {
   margin: 0;
@@ -9,19 +9,42 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-/* #navbar {
-  width: 100%;
-  height: auto;
+#navbar {
+  
 } */
+#navbar {
+  margin-bottom: 20px;
+}
+#main > div {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.fa-5 {
+  color: #475d4b;
+  font-size: 12px;
+}
+.fa-star {
+  font-size: 12px;
+  color: #475d4b;
+}
+#best > img {
+  position: absolute;
+  width: 9%;
+  margin-top: -4px;
+  margin-left: -2px;
+}
 
 #sidebar {
-  width: 20%;
+  width: 15%;
+  float: left;
 }
 
 #wishlist {
   margin-left: 5%;
 }
-
+#major {
+  display: flex;
+  flex-direction: row;
+}
 #main {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -29,12 +52,14 @@ body {
   gap: 15px;
 
   /* border: 1px solid black; */
-  width: 60%;
+  width: 80%;
+  float: left;
 
   margin-top: 15px;
   margin: auto;
 
   /* height: 1300px; */
+  margin-left: 20px;
 }
 
 /* #main > div {
