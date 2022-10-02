@@ -1,3 +1,15 @@
+
+body{
+
+  background-image: url(flowers.png);
+background-repeat: no-repeat;
+  background-position: top;
+  
+
+}
+
+
+
 #container{
     width: 30%;
     height: 400px;
