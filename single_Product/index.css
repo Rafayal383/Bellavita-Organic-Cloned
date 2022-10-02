@@ -1,4 +1,4 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 
 * {
   margin: 0;
@@ -10,39 +10,21 @@ body {
 }
 
 #navbar {
-  
-} */
-
-#main > div {
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  width: 100%;
+  /* height: 90px; */
+  margin-bottom: 20px;
 }
-
-.fa-5 {
-  color: #475d4b;
-  font-size: 12px;
+#major {
+  display: flex;
+  flex-direction: row;
 }
-.fa-star {
-  font-size: 12px;
-  color: #475d4b;
-}
-#best > img {
-  position: absolute;
-  width: 9%;
-  margin-top: -4px;
-  margin-left: -2px;
-}
-
 #sidebar {
-  width: 15%;
+  width: 20%;
   float: left;
 }
 
 #wishlist {
   margin-left: 5%;
-}
-#major {
-  display: flex;
-  flex-direction: row;
 }
 #main {
   display: grid;
@@ -58,7 +40,6 @@ body {
   margin: auto;
 
   /* height: 1300px; */
-  margin-left: 20px;
 }
 
 /* #main > div {
@@ -104,7 +85,6 @@ body {
   margin-left: -10px;
   text-decoration: line-through;
 }
-
 /* #price p:nth-child(1) {
   margin-right: 130%;
   position: relative;
@@ -218,6 +198,21 @@ option {
 #wishlist {
   cursor: pointer;
 }
-#major {
-  margin-top: 80px;
+
+#main > div {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.fa-5 {
+  color: #475d4b;
+  font-size: 12px;
+}
+.fa-star {
+  font-size: 12px;
+  color: #475d4b;
+}
+#best > img {
+  position: absolute;
+  width: 9%;
+  margin-top: -4px;
+  margin-left: -2px;
 }
