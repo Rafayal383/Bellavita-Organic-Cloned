@@ -1,3 +1,8 @@
+import navbar from "../common_Style/navbar.js";
+document.getElementById("navbar").innerHTML = navbar();
+import footer from "../common_Style/footer.js";
+document.getElementById("footer").innerHTML = footer();
+
 import bodycaredata from "../DataAll/body_care.js";
 let product_array = bodycaredata;
 
@@ -33,9 +38,8 @@ const addtowishlist = ({
     offprice,
     price,
     Ratings,
-  })
+  });
   localStorage.setItem("wishlist", JSON.stringify(wishlist_data));
-
 };
 let cart_data = JSON.parse(localStorage.getItem("cart")) || [];
 const addtocart = ({ img1, img, img2, pname, offprice, price, Ratings }) => {

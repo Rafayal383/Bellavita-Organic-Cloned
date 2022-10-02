@@ -12,12 +12,11 @@ body {
 #navbar {
   
 } */
-#navbar {
-  margin-bottom: 20px;
-}
+
 #main > div {
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
+
 .fa-5 {
   color: #475d4b;
   font-size: 12px;
@@ -105,6 +104,7 @@ body {
   margin-left: -10px;
   text-decoration: line-through;
 }
+
 /* #price p:nth-child(1) {
   margin-right: 130%;
   position: relative;
@@ -217,4 +217,7 @@ option {
 
 #wishlist {
   cursor: pointer;
+}
+#major {
+  margin-top: 80px;
 }

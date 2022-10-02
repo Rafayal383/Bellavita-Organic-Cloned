@@ -13,6 +13,15 @@ hr {
 
   list-style: none;
 }
+
+#lasttotal {
+  width: 30%;
+  /* border: 1px solid black; */
+  font-weight: 500;
+  margin-left: 85%;
+  font-size: 20px;
+  color: #475d4b;
+}
 #heading {
   display: flex;
   flex-direction: row;
@@ -66,4 +75,18 @@ hr {
   color: #e5f0da;
   width: 100%;
   margin-top: 5px;
+}
+#checkout {
+  width: 20%;
+  height: 45px;
+  background-color: #475d4b;
+  border: 0px;
+  font-weight: 700;
+  color: white;
+  margin-top: 10px;
+  border-radius: 12px;
+  text-decoration: none;
+  cursor: pointer;
+  margin-bottom: 100px;
+  margin-left: 85%;
 }
