@@ -1,3 +1,4 @@
+
 #container{
     width: 30%;
     height: 400px;
@@ -8,8 +9,12 @@
 }
 .h2{
 
-  width: 90%;
+  /* width: 95%;
   text-align: center;
+  margin-left: 5%; */
+  font-weight: 500;
+  margin-top: 10px;
+
 }
 
 #email,#password{
