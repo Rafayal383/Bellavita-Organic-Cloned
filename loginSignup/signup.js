@@ -21,5 +21,6 @@ function signUp() {
 
   localStorage.setItem("user", JSON.stringify(data));
   alert("sign up sucessfull");
-  window.location = "/dreary-hand-8237/landingPage/landing.html";
+  window.location = "../landingPage/landing.html";
+  
 }
