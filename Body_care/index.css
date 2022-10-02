@@ -17,6 +17,7 @@ body {
 #major {
   display: flex;
   flex-direction: row;
+  padding-right: 25px;
 }
 #sidebar {
   width: 20%;
