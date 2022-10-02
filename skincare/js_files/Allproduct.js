@@ -1,12 +1,8 @@
-import skinproductData from "./skincare.js"
+import skinproductData from "./skincare.js";
 // import { Box } from "./box.js";
 let product_array = skinproductData;
-
-
-import navbar from "" 
-
-document.getElementById("navbar").innerHTML= navbar();
-
+import navbar from "/dreary-hand-8237/common_Style/navbar.js";
+document.getElementById("navbar").innerHTML = navbar();
 
 // localStorage.setItem("skinproductData", JSON.stringify(skinproductData));
 
@@ -44,9 +40,8 @@ const addtowishlist = ({
     offprice,
     price,
     Ratings,
-  })
+  });
   localStorage.setItem("wishlist", JSON.stringify(wishlist_data));
-
 };
 let cart_data = JSON.parse(localStorage.getItem("cart")) || [];
 const addtocart = ({ img1, img, img2, pname, offprice, price, Ratings }) => {
@@ -122,7 +117,6 @@ productAppend(product_array);
 //   window.location.href = "#";
 // }
 
-
 document.querySelector("#SortBy").addEventListener("change", handlePriceSort);
 function handlePriceSort() {
   let selected = document.querySelector("#SortBy").value;
@@ -180,5 +174,3 @@ function handlePriceSort() {
     productAppend(product_array);
   }
 }
-
-
