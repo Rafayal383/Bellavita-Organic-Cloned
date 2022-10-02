@@ -18,7 +18,7 @@ const showProduct = ({ img1, img, img2, pname, offprice, price, Ratings }) => {
     Ratings,
   };
   localStorage.setItem("products", JSON.stringify(obj));
-  window.location.href = "single.html";
+  window.location.href = "single.html"; 
 };
 let wishlist_data = JSON.parse(localStorage.getItem("wishlist")) || [];
 const addtowishlist = ({
