@@ -3,6 +3,11 @@ import skinproductData from "./skincare.js"
 let product_array = skinproductData;
 
 
+import navbar from "" 
+
+document.getElementById("navbar").innerHTML= navbar();
+
+
 // localStorage.setItem("skinproductData", JSON.stringify(skinproductData));
 
 // let Pdata = JSON.parse(localStorage.getItem("skinproductData"));
@@ -175,3 +180,5 @@ function handlePriceSort() {
     productAppend(product_array);
   }
 }
+
+
