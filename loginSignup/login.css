@@ -9,7 +9,6 @@ background-repeat: no-repeat;
 }
 
 
-
 #container{
     width: 30%;
     height: 400px;
@@ -20,12 +19,16 @@ background-repeat: no-repeat;
 }
 .h2{
 
-  width: 90%;
+  /* width: 95%;
   text-align: center;
+  margin-left: 5%; */
+  font-weight: 500;
+  margin-top: 10px;
+
 }
 
-input{
-
+#email,#password{
+  padding: 25px;
   height: 40px;
   margin-top: 5%;
 }
@@ -36,7 +39,7 @@ form{
 }
 
 #submit{
-  
+  padding: 10px;
   width: 40%;
   height: 35px;
   margin: auto;
